@@ -60,7 +60,6 @@
             <li class="mainnav left rel">
               <a class="link f-f0 nowrp f-cf" href="#" target="_blank">文化教育</a>
             </li>
-            
             <li class="mainnav left f-cf rel">
               <a class="link f-f0 f-cf nowrp" href="#" target="_blank">体&nbsp;&nbsp;&nbsp;&nbsp;育</a>
             </li>
@@ -76,19 +75,23 @@
              <li class="mainnav left f-cf rel">
               <a class="link f-f0 f-cf nowrp" href="#" target="_blank">自然环境</a>
             </li>
+             </li>
+             <li class="mainnav left f-cf rel">
+              <a class="link f-f0 f-cf nowrp" href="#" target="_blank">关于我们</a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!--   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
-      <ol class="carousel-indicators">
+    <!--   <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
       </ol>
       <!-- Wrapper for slides -->
-      <div class="carousel-inner imgitem" role="listbox">
+     <!--  <div class="carousel-inner imgitem" role="listbox">
         <div class="item active">
           <img src="img/1.jpg" alt="四六级">
           <div class="carousel-caption">
@@ -107,10 +110,10 @@
             ....
           </div>
         </div>
-      </div>
+      </div> --> 
 
       <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <!--   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
@@ -119,8 +122,22 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </div>
-
+  </div>  -->
+  <div class="slider">
+    <!-- 0.修改VIEW->Template(关键字替换) ，增加template id-->
+          <div class="main" id="template_main">
+            <div class="main-i {{css}}" id="main_{{index}}">
+              <div class="caption">
+                <h2>{{h2}}</h2>
+                <h3>{{h3}}</h3>
+              </div>
+              <img src="img/{{index}}.jpg" class="picture" />
+            </div>
+          </div>
+          <div class="ctrl" id="template_ctrl">
+            <a href="javascript:switchSlider({{index}});" class="ctrl-i" id="ctrl_{{index}}"><img src="img/{{index}}.jpg"></a>
+          </div>
+        </div>
   <!-- container -->
   <div class="m-indexDetail">
     <!--人文社会 -->
@@ -174,16 +191,13 @@
               <span class="f-db f-pa f-cf oviImgText ">自然界的奇妙而有趣</span>
             </span>
             <span class="f-db f-f0 oviTitle">昆虫的性爱</span>
-           
           </a>
-          <!--无广告读栏目-->
           <a href="#" class="f-db f-fl u-openVideoItem">
             <span class="f-db f-pr f-oh oviImg">
               <img class="lazy" src="img/1.jpg" data-original="" alt="朝鲜女教师自曝教书轶事">
               <span class="f-db f-pa f-cf oviImgText ">朝鲜教书是怎样一种体验</span>
             </span>
             <span class="f-db f-f0 oviTitle">朝鲜女教师自曝教书轶事</span>
-
           </a>
         </div>
     </div>
@@ -211,19 +225,14 @@
                     <img class="lazy" src="img/1.jpg" data-original="#" alt="建筑史">
                     <span class="f-db f-pa f-cf oviImgText "> 翻译至第23集</span>
                 </span>
-                <span class="f-db f-f0 oviTitle">建筑史
-                <!--<span class="f-ib f-f1 oviSubtitle hide"></span>-->
-                </span>
-               
+                <span class="f-db f-f0 oviTitle">建筑史</span>
             </a>
             <a href="#" class="f-db f-fl u-openVideoItem">
                 <span class="f-db f-pr f-oh oviImg">
                     <img class="lazy" src="img/1.jpg" data-original="" alt="如何创业">
                     <span class="f-db f-pa f-cf oviImgText "> 全20集 翻译完</span>
                 </span>
-                <span class="f-db f-f0 oviTitle">如何创业
-                <!--<span class="f-ib f-f1 oviSubtitle hide"></span>-->
-                </span>
+                <span class="f-db f-f0 oviTitle">如何创业</span>
               
             </a>
             <a href="#" class="f-db f-fl u-openVideoItem">
@@ -806,29 +815,35 @@
   <div class="modal fade" id="modal_id">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header bg">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title">外文阅读难度划分及推荐</h4>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" id="modal-body">
           <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">@</span>
-            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            <span class="input-group-addon bg f-cf" id="basic-addon1">用户名</span>
+            <input type="text" class="form-control" placeholder="Username/email" aria-describedby="basic-addon1" id="username">
           </div>
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">@</span>
-            <input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+          <div class="input-group" id="ps_group">
+            <span class="input-group-addon bg f-cf" id="basic-addon1">密&nbsp;&nbsp;&nbsp;码</span>
+            <input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1" id="password">
           </div>
           <div class="btn-group" role="group" aria-label="...">
-            <button type="button" class="btn btn-default">登录</button>
+            <button type="button" class="btn btn-primary login" id="login">登录</button>
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">忘记密码</button>
-          <button type="button" class="btn btn-primary">去注册</button>
+        <div class="m-unlogin">
+          <a class="forgetpwd" data-outlink="1" href="http://reg.163.com/resetpwd/index.do" target="_blank" id="auto-id-1458969079992">忘记密码？</a>
+          <a id="changepage" data-action="changepage" class="u-regbtn bgcolor tabfocus j-redirect" href="javascript:void(0);" data-outlink="2" target="_self" tabindex="11">去注册</a>
         </div>
       </div>
     </div>
+  </div>
+  <!-- 回到顶部 -->
+  <div class="g-sTool">
+      <a href="#">
+        <img src="img/dingbu.png"  alt="回到顶部" class="m-st1">
+      </a>
   </div>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
