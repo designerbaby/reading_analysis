@@ -170,6 +170,9 @@ header {
 .rel, .f-pr {
   position: relative;
 }
+.bg {
+  background-color: #337ab7;
+}
 
 /*index.html*/
 
@@ -253,6 +256,9 @@ header {
   transition: .5s;
   background: #888888;
 }
+.m-categoryIndex:hover {
+  opacity: 0.8;
+}
 .m-categoryIndex a {
   color: #ffffff;
 }
@@ -271,14 +277,30 @@ header {
 .m-ty {
   background-color: #62320e;
 }
-.m-kpkj {
+.m-kp {
   background-color: #7d9519;
+}
+.m-kj {
+  background-color: #4095E8;
 }
 .m-yxjk {
   background-color: #10ae58;
 }
 .m-zrhj {
   background-color: #0064b7;
+}
+
+/*.shu{
+	width: 50px;
+	font-size: 3em;
+	word-wrap: break-word;
+	letter-spacing: 20px;
+	margin: 0 auto;
+}*/
+
+.u-openVideoItem:hover .oviImg img {
+  transition: 1s;
+  transform: scale(1.1);
 }
 .m-categoryIndex .ciTitle {
   text-align: center;
@@ -287,7 +309,7 @@ header {
   line-height: 1.25em;
 }
 .m-categoryIndex .ciList.shortList {
-  padding: 0 12px 0 26px;
+  padding: 0 12px 0 50px;
 }
 .m-categoryIndex .ciList {
   margin-top: 20px;
@@ -305,20 +327,282 @@ header {
 .u-openVideoItem {
   width: 180px;
   min-height: 147px;
-  margin-bottom: 21px;
   margin-left: 15px;
 }
 .u-openVideoItem.topItem {
   width: 375px;
 }
+.u-openVideoItem.topItem .oviImg {
+  height: 268px;
+}
+.u-openVideoItem .oviImg {
+  transition: .5s;
+  background-color: rgb(230, 230, 230);
+}
+.u-openVideoItem .oviImg img {
+  display: block;
+  width: 100%;
+  transition: .5s cubic-bezier(0, 0.6, 0.3, 1);
+}
+.u-openVideoItem.topItem .oviImgText {
+  font-size: 14px;
+}
+.u-openVideoItem .oviImgText {
+  bottom: 0;
+  width: 100%;
+  padding: 0 .5em;
+  background-color: rgba(0, 0, 0, 0.6);
+  line-height: 1.5em;
+}
+.u-openVideoItem.topItem .oviTitle {
+  font-size: 16px;
+}
+.u-openVideoItem .oviTitle {
+  overflow: hidden;
+  height: 1.25em;
+  margin-top: .65em;
+  transition: .25s;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 1.25em;
+}
+
+/*模块框*/
+
+.modal-dialog .modal-header {
+  min-height: 16.43px;
+  padding: 15px;
+  color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal-dialog .close {
+  color: #ffffff;
+}
+.modal-dialog .modal-title {
+  margin-left: 25%;
+}
+.modal-dialog .modal-content {
+  width: 70%;
+  margin-left: 10%;
+}
+.modal-dialog .modal-body {
+  padding: 8%;
+}
+.modal-dialog .input-group {
+  margin-bottom: 3%;
+}
+.modal-dialog .btn-group {
+  display: block;
+  margin: 5%;
+  margin-bottom: 10%;
+}
+.modal-dialog .login {
+  width: 100%;
+}
+.m-unlogin {
+  width: 85%;
+  height: 40px;
+  margin: 0 auto;
+  padding: 2px 0 9px 0;
+  line-height: 16px;
+}
+.m-unlogin .forgetpwd {
+  float: left;
+  height: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #999;
+  font-size: 12px;
+  line-height: 16px;
+}
+.m-unlogin .u-regbtn {
+  float: right;
+  cursor: pointer;
+  color: #999;
+  font-size: 12px;
+  line-height: 16px;
+}
+.m-unlogin a:hover {
+  text-decoration: underline;
+  color: #285e90;
+}
+.g-sTool {
+  position: fixed;
+  z-index: 9999;
+  top: 80%;
+  left: 94%;
+  display: none;
+  overflow: hidden;
+  width: 78px;
+  padding: 3px;
+  background: #f6f5f5;
+}
+.m-st1 {
+  position: relative;
+  width: 156px;
+  height: 77px;
+  -webkit-transition: left 0.3s cubic-bezier(1, 0.55, 0, 0.84);
+  /* Safari 和 Chrome */
+  -moz-transition: left 0.3s cubic-bezier(1, 0.55, 0, 0.84);
+  /* Firefox 4 */
+  -o-transition: left 0.3s cubic-bezier(1, 0.55, 0, 0.84);
+  transition: left 0.3s cubic-bezier(1, 0.55, 0, 0.84);
+  border-bottom: 5px solid #f6f5f5;
+}
+.m-st1:hover {
+  left: -78px;
+}
+
+/*轮播图样式*/
+
+.slider, .slider .main, .slider .main .main-i {
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+
+/*幻灯片区域*/
+
+.slider .main {
+  overflow: hidden;
+}
+
+/*每一个幻灯片的样式*/
+
+.slider .main .main-i {
+  overflow: hidden;
+}
+.slider .main .main-i img {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slider .main .main-i .main-i_right {
+  right: -50%;
+}
+.slider .main .main-i .caption {
+  position: absolute;
+  z-index: 9;
+  top: 30%;
+  right: 50%;
+}
+.slider .main .main-i .caption h2 {
+  text-align: right;
+  color: #b5b5b5;
+  font-size: 40px;
+  line-height: 50px;
+}
+.slider .main .main-i .caption h3 {
+  text-align: right;
+  color: #000000;
+  font-family: 'Open Sans Condensed';
+  font-size: 70px;
+  line-height: 70px;
+}
+
+/*控制按钮区域*/
+
+.slider .ctrl {
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  width: 100%;
+  height: 13px;
+  text-align: center;
+  line-height: 13px;
+}
+.slider .ctrl .ctrl-i {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 13px;
+  margin-left: 1px;
+  background-color: #666;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+  /*透明度为30%的阴影*/
+}
+.slider .ctrl .ctrl-i img {
+  position: absolute;
+  z-index: 1;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  -webkit-transition: all .2s;
+  opacity: 0;
+}
+
+/*hover到控制按钮的样式*/
+
+.slider .ctrl .ctrl-i:hover {
+  background-color: #f0f0f0;
+}
+.slider .ctrl .ctrl-i:hover img {
+  z-index: 10;
+  bottom: 13px;
+  opacity: 1;
+  -webkit-box-reflect: below 0px -webkit-gradient( linear, left top, left bottom, from( transparent), color-stop( 50%, transparent), to( rgba(255, 255, 255, .3)));
+}
+
+/*active 当前展示的状态*/
+
+.slider .ctrl .ctrl-i_active:hover, .slider .ctrl .ctrl-i_active {
+  background-color: #000;
+}
+.slider .ctrl .ctrl-i_active:hover img {
+  opacity: 0;
+}
+
+/*幻灯片切换的样式*/
+
+.slider .main .main-i {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 50%;
+  -webkit-transition: all .5s;
+  opacity: 0;
+}
+.slider .main .main-i h2 {
+  margin-right: 45px;
+}
+.slider .main .main-i h3 {
+  margin-right: -45px;
+}
+.slider .main .main-i h2, .slider .main .main-i h3 {
+  -webkit-transition: all 1s .8s;
+  opacity: 0;
+}
+#main_background, .slider .main .main-i_active {
+  z-index: 2;
+  right: 0;
+  opacity: 1;
+}
+#main_background {
+  z-index: 1;
+}
+.slider .main .main-i_active h2, .slider .main .main-i_active h3 {
+  margin-right: 0px;
+  opacity: 1;
+}
+.slider .main .main-i .caption {
+  margin-right: 13%;
+}
 
 /*footer*/
 
 .m-footer {
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
   border-top: 1px solid #dddddd;
   background: #e6e6e6;
+}
+.m-footer .cr {
+  color: #999;
+  line-height: 18px;
 }
 
 /*list.html*/
@@ -341,19 +625,20 @@ header {
   width: 30%
 }
 .m-card-li {
-  background-color: #fff;
-  padding: .5em .5em .5em .8em;
-  box-shadow: 0 1px 7px  #bcbcbc;
-  word-break: break-all;
   margin-bottom: 1.5em;
+  padding: .5em .5em .5em .8em;
+  word-break: break-all;
+  background-color: #fff;
+  box-shadow: 0 1px 7px #bcbcbc;
 }
 .m-card-li h2 {
   margin: 0 0 .2em 0;
 }
 .m-card-li img {
-  height:6.5em;
-  width: auto;
   float: right;
+  width: auto;
+  height: 6.5em;
+	margin-left:.2em; 
 }
 .m-card-li p {
   margin: .5em 0 0 0;
@@ -363,8 +648,8 @@ header {
   margin-right: .8em;
 }
 .page-bt {
-  text-align: center;
   margin-bottom: 1em;
+  text-align: center;
 }
 .page-bt a {
   font-size: 1.5em;
