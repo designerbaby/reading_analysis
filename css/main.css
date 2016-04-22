@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+﻿@font-face {
+=======
 @font-face {
+>>>>>>> e21a75e63c964332b2bca023edaad0011bb1149e
   font-family: 'glyphicons-halflings-regular';
   font-weight: normal;
   font-style: normal;
@@ -31,6 +35,12 @@
   .u-openVideoItem.topItem {
     width: 385px;
   }
+<<<<<<< HEAD
+  .logo{
+    height:100px;
+  }
+=======
+>>>>>>> e21a75e63c964332b2bca023edaad0011bb1149e
   /*列表页卡片字体*/
   .m-card-li {
     font-size: 18px;
@@ -59,6 +69,12 @@
   .m-card-li p {
     font-size: 15px;
   }
+<<<<<<< HEAD
+  .logo{
+    height:80px;
+  }
+=======
+>>>>>>> e21a75e63c964332b2bca023edaad0011bb1149e
 }
 @media screen and (max-width:1200px) {
   .g-container {
@@ -77,7 +93,15 @@
   .m-card-li p {
     font-size: 12px;
   }
+<<<<<<< HEAD
+  .logo{
+    height:80px;
+  }
 }
+
+=======
+}
+>>>>>>> e21a75e63c964332b2bca023edaad0011bb1149e
 html, body {
   position: relative;
   width: 100%;
@@ -175,7 +199,14 @@ header {
 }
 
 /*index.html*/
+<<<<<<< HEAD
+.logo{
+  width: 30%;
+  height:100px;
+}
+=======
 
+>>>>>>> e21a75e63c964332b2bca023edaad0011bb1149e
 .g-wrap {
   width: 100%;
 }
@@ -185,11 +216,21 @@ header {
   background: #ebebeb;
 }
 .m-midnav {
+<<<<<<< HEAD
+  margin-bottom: 30px;
+}
+.m-midnav .navbar-form {
+  margin-top: 40px;
+}
+.navbar-form{
+  margin-top: 100px;
+=======
   height: 54px;
   margin-bottom: 30px;
 }
 .m-midnav .navbar-form {
   margin-top: 25px;
+>>>>>>> e21a75e63c964332b2bca023edaad0011bb1149e
 }
 .m-botnav {
   z-index: 800;
@@ -252,6 +293,19 @@ header {
   height: 315px;
   margin-right: 15px;
   margin-bottom: 55px;
+<<<<<<< HEAD
+  transition: .5s;
+  background: #888888;
+}
+.m-categoryIndex:hover {
+  opacity: 0.8;
+}
+.m-categoryIndex a {
+  color: #ffffff;
+}
+.m-categoryIndex a:hover{
+   text-decoration: underline;
+=======
   padding-top: 28px;
   transition: .5s;
   background: #888888;
@@ -261,6 +315,7 @@ header {
 }
 .m-categoryIndex a {
   color: #ffffff;
+>>>>>>> e21a75e63c964332b2bca023edaad0011bb1149e
 }
 .m-social {
   background-color: #970700;
@@ -301,6 +356,11 @@ header {
 .u-openVideoItem:hover .oviImg img {
   transition: 1s;
   transform: scale(1.1);
+<<<<<<< HEAD
+  width:100%;
+  height:92%;
+=======
+>>>>>>> e21a75e63c964332b2bca023edaad0011bb1149e
 }
 .m-categoryIndex .ciTitle {
   text-align: center;
@@ -309,7 +369,11 @@ header {
   line-height: 1.25em;
 }
 .m-categoryIndex .ciList.shortList {
+<<<<<<< HEAD
+  padding: 0 12px 0 12px;
+=======
   padding: 0 12px 0 50px;
+>>>>>>> e21a75e63c964332b2bca023edaad0011bb1149e
 }
 .m-categoryIndex .ciList {
   margin-top: 20px;
@@ -317,8 +381,13 @@ header {
 }
 .m-categoryIndex .ciList>li {
   display: inline-block;
+<<<<<<< HEAD
+  width: 5em;
+  margin-bottom: 1em;
+=======
   width: 4em;
   margin-bottom: 1.5em;
+>>>>>>> e21a75e63c964332b2bca023edaad0011bb1149e
   margin-left: 12px;
   text-align: left;
   white-space: nowrap;
@@ -341,8 +410,17 @@ header {
 }
 .u-openVideoItem .oviImg img {
   display: block;
+<<<<<<< HEAD
+  height:92%;
+  transition: .5s cubic-bezier(0, 0.6, 0.3, 1);
+}
+.u-openVideoItem .oviImg_small img{
+  width:180px;
+  height:100px;
+=======
   width: 100%;
   transition: .5s cubic-bezier(0, 0.6, 0.3, 1);
+>>>>>>> e21a75e63c964332b2bca023edaad0011bb1149e
 }
 .u-openVideoItem.topItem .oviImgText {
   font-size: 14px;
@@ -351,8 +429,16 @@ header {
   bottom: 0;
   width: 100%;
   padding: 0 .5em;
+<<<<<<< HEAD
+  background-color: rgba(0, 0, 0, 0.9);
+  line-height: 1.5em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+=======
   background-color: rgba(0, 0, 0, 0.6);
   line-height: 1.5em;
+>>>>>>> e21a75e63c964332b2bca023edaad0011bb1149e
 }
 .u-openVideoItem.topItem .oviTitle {
   font-size: 16px;
@@ -451,7 +537,11 @@ header {
   border-bottom: 5px solid #f6f5f5;
 }
 .m-st1:hover {
+<<<<<<< HEAD
+  left: -80px;
+=======
   left: -78px;
+>>>>>>> e21a75e63c964332b2bca023edaad0011bb1149e
 }
 
 /*轮播图样式*/
@@ -638,7 +728,11 @@ header {
   float: right;
   width: auto;
   height: 6.5em;
+<<<<<<< HEAD
+	margin-left:.2em; 
+=======
   margin-left: .2em;
+>>>>>>> e21a75e63c964332b2bca023edaad0011bb1149e
 }
 .m-card-li p {
   margin: .5em 0 0 0;
@@ -654,3 +748,33 @@ header {
 .page-bt a {
   font-size: 1.5em;
 }
+<<<<<<< HEAD
+
+@media screen and (min-width:1500px) {
+  .logo{
+    height:100px;
+  }
+}
+@media screen and (min-width:1200px) and (max-width:1500px) {
+ .logo{
+    height:80px;
+  }
+}
+@media screen and (max-width:1200px) {
+  .logo{
+    height:80px;
+  }
+}
+
+@media screen and (min-width:1000px) and (max-width:1200px){
+  .logo{
+    height:70px;
+  }
+}
+@media screen and (min-width:800px) and (max-width:1000px){
+  .logo{
+    height:50px;
+  }
+}
+=======
+>>>>>>> e21a75e63c964332b2bca023edaad0011bb1149e
