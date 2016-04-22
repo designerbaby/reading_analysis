@@ -1,0 +1,46 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Node.js\\nodesetup\\\\node.exe',
+1 verbose cli   'D:\\Node.js\\nodesetup\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'server.js' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of G:\Desktop\mysql-node-api\package.json
+5 verbose installManyTop reading scoped package data from G:\Desktop\mysql-node-api\node_modules\bufferhelper\package.json
+6 verbose installManyTop reading scoped package data from G:\Desktop\mysql-node-api\node_modules\iconv-lite\package.json
+7 verbose installManyTop reading scoped package data from G:\Desktop\mysql-node-api\node_modules\mysql\package.json
+8 verbose installManyTop reading scoped package data from G:\Desktop\mysql-node-api\node_modules\node-mysql\package.json
+9 info package.json node-mysql@0.4.2 No license field.
+10 verbose readDependencies loading dependencies from G:\Desktop\mysql-node-api\package.json
+11 silly cache add args [ 'server.js', null ]
+12 verbose cache add spec server.js
+13 silly cache add parsed spec { raw: 'server.js',
+13 silly cache add   scope: null,
+13 silly cache add   name: null,
+13 silly cache add   rawSpec: 'server.js',
+13 silly cache add   spec: 'G:\\Desktop\\mysql-node-api\\server.js',
+13 silly cache add   type: 'local' }
+14 silly addLocalTarball shasum (computed) 067901181f014a47593518aa55279edfdfb93012
+15 verbose addTmpTarball G:\Desktop\mysql-node-api\server.js not in flight; adding
+16 verbose addTmpTarball validating metadata from G:\Desktop\mysql-node-api\server.js
+17 verbose tar unpack G:\Desktop\mysql-node-api\server.js
+18 verbose tar unpacking to C:\Users\jiana\AppData\Local\Temp\npm-1260-d3ffae9c\unpack-933cf2d00937
+19 silly gentlyRm C:\Users\jiana\AppData\Local\Temp\npm-1260-d3ffae9c\unpack-933cf2d00937 is being purged
+20 verbose gentlyRm don't care about contents; nuking C:\Users\jiana\AppData\Local\Temp\npm-1260-d3ffae9c\unpack-933cf2d00937
+21 silly gunzTarPerm modes [ '777', '666' ]
+22 error not a package G:\Desktop\mysql-node-api\server.js
+23 error addLocal Could not install G:\Desktop\mysql-node-api\server.js
+24 verbose stack Error: ENOENT, open 'C:\Users\jiana\AppData\Local\Temp\npm-1260-d3ffae9c\unpack-933cf2d00937\package.json'
+24 verbose stack     at Error (native)
+25 verbose cwd G:\Desktop\mysql-node-api
+26 error Windows_NT 6.3.9600
+27 error argv "D:\\Node.js\\nodesetup\\\\node.exe" "D:\\Node.js\\nodesetup\\node_modules\\npm\\bin\\npm-cli.js" "install" "server.js"
+28 error node v0.12.7
+29 error npm  v2.11.3
+30 error path C:\Users\jiana\AppData\Local\Temp\npm-1260-d3ffae9c\unpack-933cf2d00937\package.json
+31 error code ENOENT
+32 error errno -4058
+33 error enoent ENOENT, open 'C:\Users\jiana\AppData\Local\Temp\npm-1260-d3ffae9c\unpack-933cf2d00937\package.json'
+33 error enoent This is most likely not a problem with npm itself
+33 error enoent and is related to npm not being able to find a file.
+34 verbose exit [ -4058, true ]

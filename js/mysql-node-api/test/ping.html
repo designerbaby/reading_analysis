@@ -1,0 +1,30 @@
+<script src="jquery-1.11.1.min.js"></script>
+<script>
+function ping(ip){
+	$.ajax({
+	type:"GET",data:{ip:ip},
+	url:"http://127.0.0.1:8080/ping_linux",
+	dataType:"jsonp",
+	success: function(msg){
+	console.log(msg.alive);
+	},error:function(){console.log('network eror');}})
+}
+function ping(ip){
+	$.ajax({
+	type:"GET",data:{ip:ip},
+	url:"http://127.0.0.1:8080/ping_windows",
+	dataType:"jsonp",
+	success: function(msg){
+	console.log(msg.alive);
+	},error:function(){console.log('network eror');}})
+}
+function getdata(page){
+	$.ajax({
+	type:"GET",data:{page:page},
+	url:"http://127.0.0.1:8080/getdata",
+	dataType:"jsonp",
+	success: function(msg){
+	console.log(msg);
+	},error:function(){console.log('network eror');}})
+}
+</script>

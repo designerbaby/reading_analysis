@@ -24,11 +24,11 @@ $(function(){
 
 //1.数据定义（实际生产环境中，应由后台给出）
 			var data=[
-				{img:1,h1:'English',h2:'Test'},
-				{img:2,h1:'American',h2:'bush'},
-				{img:3,h1:'England',h2:'yes'},
-				{img:4,h1:'Australia',h2:'Canada'},
-				{img:5,h1:'Farish',h2:'Parish'},
+				{img:1,h1:'Professional',h2:'专业'},
+				{img:2,h1:'English',h2:'英语'},
+				{img:3,h1:'Supplementary',h2:'辅助'},
+				{img:4,h1:'Reading',h2:'阅读'},
+				{img:5,h1:'GDUF',h2:'广金'},
 			];
 			//2.通用函数
 			var g = function (id) {
